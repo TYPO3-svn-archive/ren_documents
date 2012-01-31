@@ -185,6 +185,15 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 				}
 				// NOTE: Permettre de faire la liste en TypoScript, et qu'elle soit calculée.
 				break;
+			default:
+				// HOOK add mode init conf
+				if (is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extKey]['modeInitConf'])) {
+					foreach ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extKey]['modeInitConf'] as $_classRef) {
+						$_procObj = & t3lib_div::getUserObj($_classRef);
+						$_procObj->modeInitConf($this);
+					}
+				}
+				break;
 		}
 		if (empty($this->aWorkspace) && empty($this->aDocuments) && empty($this->piVars['uid']))
 		{
