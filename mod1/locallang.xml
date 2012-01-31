@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;file_txrendocumentsM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Documents</label>
+			<label index="new_workspace">New workspace</label>
+			<label index="error_noworkspace">The selected workspace is not a valid workspace. Please, select one is the left pane.</label>
+			<label index="info_selectworkspace">Please, select a workspace in the left pane.</label>
+			<label index="error_noselect">You do not have the right to access to workspace records.</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="title">Documents</label>
+			<label index="new_workspace">Nouvel espace</label>
+			<label index="error_noworkspace">L'espace sélectionné n'est pas valide. Veuillez en sélectionere un dans la panneau de gauche.</label>
+			<label index="info_selectworkspace">Veuillez sélectionner un espace dans le panneau de gauche.</label>
+			<label index="error_noselect">Vous n'avez pas les accès aux enregistrements d'espace.</label>
+		</languageKey>
+	</data>
+</T3locallang>

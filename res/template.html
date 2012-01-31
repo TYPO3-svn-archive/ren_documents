@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Documents example template</title>
+</head>
+<body>
+
+<h1>Templates</h1>
+
+<h2>Document list</h2>
+<!--
+Marqueurs (disposées hiérarchiquement) :
+	###CAPTION###: Légende associé au tableau.
+	###HEADER_ITEM###: Sous-partie pour les en-têtes du tableau.
+		###HEADERID###: Identifiant unique de l'en-tête.
+		###HEADER###: Texte de l'en-tête.
+	###DOCUMENT_ITEM###: Sous-partie pour les lignes du tableau.
+		###DOCUMENT_VALUE_ITEM###: Sous-partie pour les colonnes d'un document.
+			###HEADERID###: Identifiant de l'en-tête associé.
+			###DOCUMENT_VALUE###: Valeur de la colonne.
+-->
+
+<!-- ###TEMPLATE_LIST### start -->
+<table style="border: 1px solid black">
+	<caption>###CAPTION###</caption>
+	<thead>
+		<tr><!-- ###HEADER_ITEM### start -->
+			<th id="###HEADERID###">###HEADER###</th><!-- ###HEADER_ITEM### end -->
+		</tr>
+	</thead>
+	<tbody><!-- ###DOCUMENT_ITEM### start -->
+		<tr><!-- ###DOCUMENT_VALUE_ITEM### start -->
+			<td headers="###HEADERID###"><p>###DOCUMENT_VALUE###</p></td><!-- ###DOCUMENT_VALUE_ITEM### end -->
+		</tr><!-- ###DOCUMENT_ITEM### end -->
+	</tbody>
+</table><!-- ###TEMPLATE_LIST### end -->
+
+<h2>Document detail</h2>
+<!--
+Marqueurs :
+	###TITLE### : Libellé du titre
+		###TITLE_VALUE### : Le titre du document
+	###AUTHOR### : Libellé de l'auteur
+		###AUTHOR_VALUE### : L'auteur du document
+	###PUBLISHED### : Libellé de la date de publication
+		###PUBLISHED_VALUE### : La date de publication du document
+	###STATE### : Libellé de l'état
+		###STATE_VALUE### : L'état du document
+	###DESCRIPTION### : Libellé de la description
+		###DESCRIPTION_VALUE### : Description du document
+	###FILE### : Libellé du fichier
+		###FILE_VALUE### : Chemin du fichier
+	###SERVICE### : Libellé du service
+		###SERVICE_VALUE### : Le service
+	###THEMES### : Libellé des thèmes
+		###THEMES_VALUE### : Les thèmes
+	###KEYWORDS### : Libellé des mot-clés
+		###KEYWORDS_VALUE### : Les mots-clés
+	###CHANGED### : Libellé de la date de modification
+		###CHANGED_VALUE### : La date de modification
+	###CHANGEDBY### : Libellé de modification
+		###CHANGEDBY_VALUE### : Modifié par
+-->
+<!-- ###TEMPLATE_DETAIL### start -->
+<div>
+	<p>###TITLE### ###TITLE_VALUE###</p>
+	<p>###AUTHOR### ###AUTHOR_VALUE###</p>
+	<p>###PUBLISHED### ###PUBLISHED_VALUE###</p>
+	<p>###STATE### ###STATE_VALUE###</p>
+	<p>###DESCRIPTION### ###DESCRIPTION_VALUE###</p>
+	<p>###FILE### ###FILE_VALUE###</p>
+	<p>###SERVICE### ###SERVICE_VALUE###</p>
+	<p>###THEMES### ###THEMES_VALUE###</p>
+	<p>###KEYWORDS### ###KEYWORDS_VALUE###</p>
+	<p>###CHANGED### ###CHANGED_VALUE###</p>
+	<p>###CHANGEDBY### ###CHANGEDBY_VALUE###</p>
+</div>
+<div>
+	<a href="###HREF_PREVIOUS###">###PREVIOUS###</a>
+</div><!-- ###TEMPLATE_DETAIL### end -->
+
+</body>
+</html>

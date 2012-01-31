@@ -1,0 +1,30 @@
+
+* The first line is the sender address, reply-to address and return-path address, separated by pipe. If an item is not specified, it falls back to the previous value. The first is mandatory.
+* The second line is the sender name and reply-to name, separated by pipe. If an item is not specified, it falls back to the previous value.
+* The third line is the subject
+* The next lines are the mail body
+<!-- ###MAIL_TEMPLATE_NEW### begin -->
+###SENDER_email###
+###SENDER_realName###
+New document.
+Hello ###USER_realName###,
+
+A new document as been created and is waiting validation. To validate the document, please connect to the TYPO3 Backend, navigate to the Documents module.
+Go to the workspace ###WORKSPACE_name###, and look up for the document titled ###DOCUMENT_title###.
+
+Regards,
+The administrator.
+<!-- ###MAIL_TEMPLATE_NEW### end -->
+
+<!-- ###MAIL_TEMPLATE_CHANGED### begin -->
+###SENDER_email###
+###SENDER_realName###
+Document changed.
+Hello ###USER_realName###,
+
+A document as been changed. To see the changes, please connect to the TYPO3 Backend, navigate to the Documents module.
+Go to the workspace ###WORKSPACE_name###, and look up for the document titled ###DOCUMENT_title###.
+
+Regards,
+The administrator.
+<!-- ###MAIL_TEMPLATE_CHANGED### end -->

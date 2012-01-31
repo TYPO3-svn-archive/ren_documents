@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>flexform</type>
+		<description>Language labels for plugin flexform &quot;tx_rendocuments_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="general">General</label>
+			<label index="selection">Selection</label>
+			<label index="template">Template</label>
+			<label index="listFields">List fields</label>
+			<label index="listFields.title">title</label>
+			<label index="listFields.description">description</label>
+			<label index="listFields.published">published</label>
+			<label index="listFields.author">author</label>
+			<label index="listFields.service">service</label>
+			<label index="listFields.themes">themes</label>
+			<label index="listFields.keywords">keywords</label>
+			<label index="listFields.changed">changed</label>
+			<label index="listFields.changedby">changedby</label>
+			<label index="listFields.file">File</label>
+			<label index="listFields.workspace">Workspace</label>
+			<label index="mode">Mode</label>
+			<label index="workspace">Workspace</label>
+			<label index="subworkspace">Include sub-Workspace</label>
+			<label index="document">Document</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="general">Général</label>
+			<label index="selection">Options de sélection</label>
+			<label index="template">Gabarit</label>
+			<label index="listFields">Champs de la liste</label>
+			<label index="listFields.title">titre</label>
+			<label index="listFields.description">description</label>
+			<label index="listFields.published">publié le</label>
+			<label index="listFields.author">auteur</label>
+			<label index="listFields.service">service</label>
+			<label index="listFields.themes">themes</label>
+			<label index="listFields.keywords">mots clés</label>
+			<label index="listFields.changed">modifié le</label>
+			<label index="listFields.changedby">modifié par</label>
+			<label index="listFields.file">Fichier</label>
+			<label index="listFields.workspace">Espace</label>
+			<label index="mode">Mode</label>
+			<label index="workspace">Espace</label>
+			<label index="subworkspace">Inclure les sous-espaces</label>
+			<label index="document">Document</label>
+		</languageKey>
+	</data>
+</T3locallang>

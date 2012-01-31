@@ -1,0 +1,8 @@
+# cat=Basic//01; type=int; label=Service storage page: The page where the service records are.
+plugin.tx_rendocuments_pi1.service=
+
+# cat=Basic//02; type=int; label=Theme storage page: The page where the theme records are.
+plugin.tx_rendocuments_pi1.theme=
+
+# cat=Basic//03; type=int; label=Workspace storage page: The page where the workspace records are.
+plugin.tx_rendocuments_pi1.workspace=

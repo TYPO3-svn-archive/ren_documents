@@ -1,0 +1,102 @@
+plugin.tx_rendocuments_pi1 {
+	list {
+		published_stdWrap.strftime = %d/%m/%Y
+		tstamp_stdWrap.strftime = %d/%m/%Y %H:%M
+		tstamp_stdWrap.required = 1
+		service_stdWrap.cObject = CONTENT
+		service_stdWrap.cObject {
+			table = tx_renlocaliser_services
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.service}
+				andWhere.field = service
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = sigle
+		}
+		themes_stdWrap.cObject = CONTENT
+		themes_stdWrap.cObject {
+			table = tx_icscategories_categories
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.theme}
+				andWhere.field = themes
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = title
+			renderObj.noTrimWrap = || |
+		}
+		workspace_stdWrap.cObject = CONTENT
+		workspace_stdWrap.cObject {
+			table = tx_rendocuments_workspaces
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.workspace}
+				andWhere.field = workspace
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = name
+		}
+		changedby_stdWrap.cObject = CONTENT
+		changedby_stdWrap.cObject {
+			table = be_users
+			select {
+				pidInList = 0,1
+				andWhere.field = changedby
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = name
+		}
+	}
+	detail {
+		published_stdWrap.strftime = %d/%m/%Y
+		tstamp_stdWrap.strftime = %d/%m/%Y %H:%M
+		tstamp_stdWrap.required = 1
+		service_stdWrap.cObject = CONTENT
+		service_stdWrap.cObject {
+			table = tx_renlocaliser_services
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.service}
+				andWhere.field = service
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = sigle
+		}
+		themes_stdWrap.cObject = CONTENT
+		themes_stdWrap.cObject {
+			table = tx_icscategories_categories
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.theme}
+				andWhere.field = themes
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = title
+			renderObj.wrap = |&nbsp;||
+		}
+		workspace_stdWrap.cObject = CONTENT
+		workspace_stdWrap.cObject {
+			table = tx_rendocuments_workspaces
+			select {
+				pidInList = {$plugin.tx_rendocuments_pi1.workspace}
+				andWhere.field = workspace
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = name
+		}
+		changedby_stdWrap.cObject = CONTENT
+		changedby_stdWrap.cObject {
+			table = be_users
+			select {
+				pidInList = 0,1
+				andWhere.field = changedby
+				andWhere.wrap = uid IN (|)
+			}
+			renderObj = TEXT
+			renderObj.field = name
+		}
+	}
+}

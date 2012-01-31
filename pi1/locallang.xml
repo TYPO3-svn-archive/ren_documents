@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_rendocuments_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Documents</label>
+			<label index="list_caption">Documents list</label>
+			<label index="th_title">Title</label>
+			<label index="th_file">File</label>
+			<label index="th_description">Description</label>
+			<label index="th_published">Published</label>
+			<label index="th_author">Author</label>
+			<label index="th_service">Service</label>
+			<label index="th_themes">Themes</label>
+			<label index="th_keywords">Keywords</label>
+			<label index="th_tstamp">Changed</label>
+			<label index="th_changedby">Changed by</label>
+			<label index="th_workspace">Workspace</label>
+			<label index="detail_title">Title</label>
+			<label index="detail_file">File</label>
+			<label index="detail_description">Description</label>
+			<label index="detail_published">Published</label>
+			<label index="detail_author">Author</label>
+			<label index="detail_service">Service</label>
+			<label index="detail_themes">Themes</label>
+			<label index="detail_keywords">Keywords</label>
+			<label index="detail_tstamp">Changed</label>
+			<label index="detail_changedby">Changed by</label>
+			<label index="detail_workspace">Workspace</label>
+			<label index="error.documents">Init error: Any document selected.</label>
+			<label index="link_follow">Follow this space</label>
+			<label index="link_no_follow">Unfollow this space</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+	</orig_hash>
+	<orig_text type="array">
+	</orig_text>
+</T3locallang>

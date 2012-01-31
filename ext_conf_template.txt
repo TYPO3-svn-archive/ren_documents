@@ -1,0 +1,13 @@
+# cat=Basic//a; type=string; label=Document folder: The folder where to put the documents, relative to SITE_ROOT. With trailing slash.
+docfolder=documents/
+# cat=Basic//b; type=int+; label=Administrator Group Id: The id of the BE usergroup which receive notifications.
+groupAdmin=
+# cat=Basic//c; type=int+; label=Writer Group Id: The id of the BE usergroup triggering notification email.
+groupeUser=
+# cat=Basic//d; type=string; label=email alerts for publication: email alerts for publication.
+fromEmail=
+# cat=Basic//e; type=string; label=name for publication alerts: name for publication alerts.
+fromName=
+# cat=Basic//f; type=string; label=Administrative mail template path:Path to the custom notification template. New and changed documents.
+admin_mail_template=
+

@@ -1,0 +1,16 @@
+
+* The first line is the sender address, reply-to address and return-path address, separated by pipe. If an item is not specified, it falls back to the previous value. The first is mandatory.
+* The second line is the sender name and reply-to name, separated by pipe. If an item is not specified, it falls back to the previous value.
+* The third line is the subject
+* The next lines are the mail body
+<!-- ###MAIL_TEMPLATE### begin -->
+###SENDER_email###
+###SENDER_realName###
+New document published.
+Hello ###USER_name###,
+
+A document as been published. To view the document, please follow this link ###LINK###.
+
+Regards,
+The administrator.
+<!-- ###MAIL_TEMPLATE### end -->

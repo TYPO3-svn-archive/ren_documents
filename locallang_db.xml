@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'ren_documents'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_rendocuments_docs">Document</label>
+			<label index="tx_rendocuments_docs.title">Title</label>
+			<label index="tx_rendocuments_docs.file">File</label>
+			<label index="tx_rendocuments_docs.description">Description</label>
+			<label index="tx_rendocuments_docs.published">Publication date</label>
+			<label index="tx_rendocuments_docs.author">Author</label>
+			<label index="tx_rendocuments_docs.service">Service</label>
+			<label index="tx_rendocuments_docs.themes">Themes</label>
+			<label index="tx_rendocuments_docs.keywords">Keywords (semi-colon separated)</label>
+			<label index="tx_rendocuments_docs.changedby">Modified by</label>
+			<label index="tx_rendocuments_docs.createdby">Created by</label>
+			<label index="tx_rendocuments_docs.workspace">Workspace</label>
+			<label index="tx_rendocuments_workspaces">Workspace</label>
+			<label index="tx_rendocuments_workspaces.name">Name</label>
+			<label index="tx_rendocuments_workspaces.groups">Default document access</label>
+            <label index="tx_rendocuments_workspaces.access">Backend groups access</label>
+            <label index="tx_rendocuments_workspaces.parent">Parent</label>
+			<label index="tx_rendocuments_workspaces.shy">Shy</label>
+			<label index="tx_rendocuments_subscriptions">Subscriptions to documents</label>
+            <label index="tx_rendocuments_subscriptions.user">User</label>
+            <label index="tx_rendocuments_subscriptions.workspace">Space</label>
+
+			<label index="tt_content.list_type_pi1">Documents</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tx_rendocuments_docs">Document</label>
+			<label index="tx_rendocuments_docs.title">Titre</label>
+			<label index="tx_rendocuments_docs.file">Fichier</label>
+			<label index="tx_rendocuments_docs.description">Description</label>
+			<label index="tx_rendocuments_docs.published">Date de publication</label>
+			<label index="tx_rendocuments_docs.author">Auteur</label>
+			<label index="tx_rendocuments_docs.service">Service</label>
+			<label index="tx_rendocuments_docs.themes">Thèmes</label>
+			<label index="tx_rendocuments_docs.keywords">Mots clefs (séparés par des points-virgule)</label>
+			<label index="tx_rendocuments_docs.changedby">Modifié par</label>
+			<label index="tx_rendocuments_docs.createdby">Créé par</label>
+			<label index="tx_rendocuments_docs.workspace">Espace</label>
+			<label index="tx_rendocuments_workspaces">Espace</label>
+			<label index="tx_rendocuments_workspaces.name">Nom</label>
+			<label index="tx_rendocuments_workspaces.groups">Accès par défaut des documents</label>
+            <label index="tx_rendocuments_workspaces.access">Groupes d'accès Backoffice</label>
+            <label index="tx_rendocuments_workspaces.parent">Parent</label>
+			<label index="tx_rendocuments_workspaces.shy">Ne pas afficher sur le site</label>
+			<label index="tx_rendocuments_subscriptions">Abonnements aux documents</label>
+            <label index="tx_rendocuments_subscriptions.user">Utilisateur</label>
+            <label index="tx_rendocuments_subscriptions.workspace">Espace</label>
+			<label index="tt_content.list_type_pi1">Documents</label>
+		</languageKey>
+	</data>
+</T3locallang>
