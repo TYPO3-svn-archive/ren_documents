@@ -190,7 +190,7 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 				if (is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extKey]['modeInitConf'])) {
 					foreach ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extKey]['modeInitConf'] as $_classRef) {
 						$_procObj = & t3lib_div::getUserObj($_classRef);
-						$_procObj->modeInitConf($this);
+						$_procObj->modeInitConf($sMode, $this);
 					}
 				}
 				break;
