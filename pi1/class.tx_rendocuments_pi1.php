@@ -76,20 +76,20 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 		$this->pi_setPiVarDefaults();
 		$this->pi_loadLL();
 		$this->pi_USER_INT_obj = 1;	// Configuring so caching is not expected. This value means that no cHash params are ever set. We do this, because it's a USER_INT object!
-		
+		$this->sContent = '';
 		if ($this->initConf())
 		{
 			// HINT: Le passage en mode détail est conditionné uniquement par la présence du paramettre qui indiquera l'uid de l'élément à afficher.
 			if (isset($this->piVars['uid']))
 			{
-				$this->sContent = $this->renderDetail(intval($this->piVars['uid']));
+				$this->sContent .= $this->renderDetail(intval($this->piVars['uid']));
 			}
 			else
 			{
 				if(isset($this->piVars['follow']))
 					$this->followSpace();
 					
-				$this->sContent = $this->renderList();
+				$this->sContent .= $this->renderList();
 			}
 		}
 		return $this->pi_wrapInBaseClass($this->sContent);
@@ -197,7 +197,7 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 		}
 		if (empty($this->aWorkspace) && empty($this->aDocuments) && empty($this->piVars['uid']))
 		{
-			$this->sContent = '<p class="error">' . htmlspecialchars($this->pi_getLL('error.documents')) . '</p>';
+			$this->sContent .= '<p class="error">' . htmlspecialchars($this->pi_getLL('error.documents')) . '</p>';
 			return false;
 		}
 		// Récupère les colonnes à afficher

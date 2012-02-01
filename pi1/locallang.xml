@@ -30,7 +30,7 @@
 			<label index="detail_tstamp">Changed</label>
 			<label index="detail_changedby">Changed by</label>
 			<label index="detail_workspace">Workspace</label>
-			<label index="error.documents">Init error: Any document selected.</label>
+			<label index="error_documents">Init error: Any document selected.</label>
 			<label index="link_follow">Follow this space</label>
 			<label index="link_no_follow">Unfollow this space</label>
 		</languageKey>
