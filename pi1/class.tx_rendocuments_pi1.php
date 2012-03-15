@@ -62,6 +62,8 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 		'changedby',
 		'workspace',
 	);
+	protected $orderBy = '';
+	protected $limit = '';
 
 	/**
 	 * The main method of the PlugIn
@@ -103,6 +105,17 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 	function initConf()
 	{
 		$this->pi_initPIflexForm();
+		$fLimit = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'limit', 'general');
+		$fOrderBy = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'orderBy', 'general');
+		switch ($fOrderBy) {
+			case 'date':
+				$this->orderBy = 'tstamp desc, title asc';
+			break;
+			case 'title':
+				$this->orderBy = 'title asc';
+		}
+		$this->limit = $fLimit ? $fLimit : $this->limit;
+		
 		$sMode = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'mode', 'general');
 		if (!$sMode)
 		{
@@ -295,18 +308,14 @@ class tx_rendocuments_pi1 extends tslib_pibase {
 		{
 			$aWhere[] = 'uid IN (' . implode(',', $this->aDocuments) . ')';
 		}
-		// $aDocs = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
-			// implode(',', $aListFields),
-			// $sTable,
-			// implode(' AND ', $aWhere)
-		// );
+		
 		$aDocs = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
 			implode(',', $aListFields),
 			$sTable,
 			implode(' AND ', $aWhere),
 			'',
-			'',
-			'',
+			$this->orderBy,
+			$this->limit,
 			'uid'
 		);
 		if (is_array($this->aDocuments))	{

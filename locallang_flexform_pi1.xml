@@ -25,6 +25,10 @@
 			<label index="workspace">Workspace</label>
 			<label index="subworkspace">Include sub-Workspace</label>
 			<label index="document">Document</label>
+			<label index="limit">Limit</label>
+			<label index="orderBy">Order By</label>
+			<label index="orderBy.date">Date</label>
+			<label index="orderBy.title">Title</label>
 		</languageKey>
 		<languageKey index="fr" type="array">
 			<label index="general">Général</label>
@@ -46,6 +50,10 @@
 			<label index="workspace">Espace</label>
 			<label index="subworkspace">Inclure les sous-espaces</label>
 			<label index="document">Document</label>
+			<label index="limit">Limite</label>
+			<label index="orderBy">Trier par</label>
+			<label index="orderBy.date">Date</label>
+			<label index="orderBy.title">Nom</label>
 		</languageKey>
 	</data>
 </T3locallang>
